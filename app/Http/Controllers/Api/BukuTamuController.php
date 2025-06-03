@@ -28,12 +28,14 @@ class BukuTamuController extends Controller
         $validatedData = $request->validate([
             'nama' => 'required|string|max:255',
             'instansi' => 'required|string|max:255',
+            'tujuan' => 'string|max:255',
             'tanggal' => 'required|date',
         ]);
 
         $result = BukuTamu::create([
             'nama' => $validatedData['nama'],
             'instansi' => $validatedData['instansi'],
+            'tujuan' => $validatedData['tujuan'],
             'tanggal' => $validatedData['tanggal'],
         ]);
 

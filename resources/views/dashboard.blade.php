@@ -16,6 +16,7 @@
                                 <th class="px-4 py-2 border">No</th>
                                 <th class="px-4 py-2 border">Nama</th>
                                 <th class="px-4 py-2 border">Instansi</th>
+                                <th class="px-4 py-2 border">Tujuan</th>
                                 <th class="px-4 py-2 border">Tanggal</th>
                             </tr>
                         </thead>
@@ -25,6 +26,7 @@
                                     <td class="px-4 py-2 border">{{ $index + 1 }}</td>
                                     <td class="px-4 py-2 border">{{ $item->nama }}</td>
                                     <td class="px-4 py-2 border">{{ $item->instansi }}</td>
+                                    <td class="px-4 py-2 border">{{ $item->tujuan }}</td>
                                     <td class="px-4 py-2 border">{{ $item->tanggal }}</td>
                                 </tr>
                             @empty
